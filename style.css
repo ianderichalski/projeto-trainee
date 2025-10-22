@@ -2,118 +2,285 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: "Poppins", "Open Sans", sans-serif;
-  line-height: 1.5;
-  color: #000;
-  background-color: #fff;
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #E2F5FA;
+    width: 100%;
+}
+
+h1, h2, h3 {
+    color: #063643;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 0.625rem;
 }
 
 header.topo {
+    background: #fff;
+    width: 100%;
+    padding: 0.625rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.topo img {
+    margin-left: 6.875rem;
 }
 
 .menu {
+    display: flex;
+    margin-right: 6.875rem;
 }
 
 .menu a {
+    color: #063643;
+    text-decoration: none;
+    padding: 0.3125rem;
+    margin-left: 0.625rem;
 }
 
 .principal {
+    background: #F8F8FF;
+    width: 75%;
+    padding: 2.5rem 5%;
+    margin: 0.625rem auto 1.25rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .texto-principal {
+    max-width: 65%; 
+    margin-right: 1.25rem;
 }
 
 .texto-principal h1 {
+    margin-top: -2.5rem;
+    font-size: 1.8rem; 
+    margin-bottom: 0.9375rem;
 }
 
 .botao-principal {
+    background: #0F637A; 
+    color: #fff;
+    margin-top: 1.875rem;
+    padding: 0.5rem 0.9375rem;
+    border-radius: 0.3125rem;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .imagem-principal {
+    max-width: 30%; 
 }
 
 .imagem-principal img {
+    max-width: 100%; 
+    height: auto;
 }
 
-.listras {
+.campanha-wrapper {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1.875rem 0;
 }
 
 .campanha {
+    background: #6BB7CB;
+    width: 60%; 
+    padding: 1.875rem 5%;
+    height: 18.75rem;
+}
+
+.seta.externa {
+    padding: 0.3125rem;
+    cursor: pointer;
+    margin: 0 0.9375rem;
+}
+
+.seta.externa img {
+    width: 1.875rem;
+    height: auto;
+    display: block;
 }
 
 .caixa-campanha {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
+}
+
+.coluna-icones {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin-bottom: 0.3125rem;
+    margin-right: 0.9375rem;
+    width: 1.875rem;
+}
+
+.coluna-icones img {
+    width: 2.5rem;
+    height: auto;
+    margin-bottom: 0.3125rem;
+}
+
+.conteudo-central {
+    flex-grow: 1;
+    text-align: center;
+    margin-right: 0.9375rem;
+}
+
+.conteudo-central h2 {
+    margin-top: 0;
 }
 
 .botao-campanha {
+    background: #F8F8FF;
+    color: #063643;
+    padding: 0.5rem 0.9375rem;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 0.625rem;
+}
+
+.img-gato {
+    width: 15%; 
+    max-width: 7.5rem;
+    height: auto;
+}
+
+.bloco2, .bloco3 {
+    width: 100%;
+    padding: 2.5rem 5%;
+    display: flex;
+    align-items: center; 
 }
 
 .bloco2 {
+    background: #6EB6CB;
+    background-image: url(imagens/fundo.png);
+    padding: 5rem 5%;
+}
+
+.bloco2 h2 { 
+    flex-basis: 15.625rem;
+    text-align: center; 
+    margin-bottom: 0.3125rem;
+    margin-right: 1.875rem;
+}
+
+.bloco2 img { 
+    max-width: 18.75rem;
+    height: auto; 
+    margin-right: 1.875rem;
+}
+
+.bloco2 p { 
+    flex-grow: 1; 
+    text-align: left; 
+    margin-top: 0; 
 }
 
 .bloco3 {
+    background: #89C5D5; 
+    background-image: url(imagens/fundo.png);
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1.875rem 5%;
 }
 
-.profissionais {
+.texto-bloco3 {
+    flex-grow: 1;
+    text-align: left;
+    margin-right: 1.875rem;
 }
 
-.medicos {
+.bloco3 h2 { 
+    text-align: left; 
+    margin-top: 0;
+    margin-bottom: 0.9375rem;
 }
 
-.pessoa {
+.bloco3 p { 
+    max-width: 37.5rem;
+    text-align: left; 
+    margin-top: 0;
 }
 
-.avaliacoes {
-}
-
-
-.contato {
-}
-
-.caixa-contato {
-}
-
-.formulario {
-}
-
-.formulario input {
-}
-
-.formulario textarea {
-}
-
-.botao-enviar {
+.bloco3 img { 
+    max-width: 15.625rem;
+    height: auto; 
 }
 
 .descricao {
+    background: #F8F8FF; 
+    padding: 1.875rem 5%;
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: center; 
+    margin-left: 2.5rem;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    margin-top: 1.875rem;
 }
 
-.logo-descricao {
+.logo-descricao img {
+    max-width: 9.375rem;
+    height: auto;
+    margin-right: 5rem;
 }
 
 .informacoes {
+    display: flex;
 }
 
 .coluna {
+    max-width: 15.625rem;
+    margin-right: 3.125rem;
 }
 
 .titulo-coluna {
+    color: #063643;
+    font-size: 1rem;
+    margin-bottom: 0.625rem;
+}
+
+.coluna ul {
+    list-style: none;
+    padding: 0;
 }
 
 .redes-sociais {
-}
-
-.redes-sociais a {
+    display: flex;
+    margin-top: 0.625rem;
 }
 
 .redes-sociais img {
+    width: 1.875rem;
+    height: 1.875rem;
+    margin-right: 0.625rem;
 }
 
-
 .rodape {
+    background: #063643;
+    color: white;
+    text-align: center;
+    padding: 0.3125rem;
+    width: 100%;
+    font-size: 0.85rem;
 }
