@@ -107,7 +107,6 @@ header.topo {
 
 .seta.externa {
     padding: 0.3125rem;
-    cursor: pointer;
     margin: 0 0.9375rem;
 }
 
@@ -227,18 +226,24 @@ header.topo {
     max-width: 15.625rem;
     height: auto; 
 }
+
 .profissionais {
+    width: 75%; 
+    margin: 3rem auto; 
     background-color: #F8F8FF;
-    width: 100%;
     padding: 3rem 5%; 
 }
 
 .profissionais h2 {
     text-align: left; 
     margin-bottom: 2rem; 
+    padding: 0; 
+    background-color: transparent; 
 }
 
 .medicos {
+    background-color: transparent;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -277,13 +282,115 @@ header.topo {
     margin-bottom: 0;
 }
 
+.avaliacoes {
+    width: 75%;
+    margin: 3rem auto;
+    padding: 3rem 5%;
+    color: #063643;
+}
+
+.avaliacoes h2 {
+    font-family: 'Inter', sans-serif;
+    color: #063643;
+    text-align: left;
+    margin-bottom: 2.5rem;
+    font-size: 1.8rem;
+}
+
+.lista-avaliacoes {
+    max-width: 50rem;
+    margin-left: 0;
+}
+
+.avaliacao-item {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 2rem; 
+    margin-bottom: 2rem; 
+    width: 100%;
+    border-bottom: 1px solid rgba(6, 54, 67, 0.2);
+}
+
+.avaliacao-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.avaliacao-item img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.conteudo-avaliacao {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.estrelas {
+    color: #FFD700;
+    font-size: 1rem;
+    margin-bottom: 0.3125rem;
+}
+
+.estrelas span {
+    margin-right: 0.125rem;
+}
+
+.conteudo-avaliacao h3 {
+    color: #063643;
+    font-size: 1.1rem;
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.conteudo-avaliacao p {
+    color: #063643;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.paginacao {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding-top: 2.5rem;
+}
+
+.paginacao span {
+    font-size: 1.1rem;
+    color: #063643;
+    margin-right: 1rem;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.seta-paginacao {
+    color: #063643;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seta-paginacao img {
+    width: 60%;
+    height: auto;
+    display: block;
+}
+
 .descricao {
     background: #F8F8FF; 
     padding: 1.875rem 5%;
     display: flex; 
     align-items: flex-start; 
     justify-content: center; 
-    margin-left: 2.5rem;
     width: 100%;
     border-top: 1px solid #ccc;
     margin-top: 1.875rem;
@@ -313,6 +420,11 @@ header.topo {
 .coluna ul {
     list-style: none;
     padding: 0;
+}
+
+.coluna ul li {
+    font-size: 0.9rem;
+    margin-bottom: 0.3125rem;
 }
 
 .redes-sociais {
