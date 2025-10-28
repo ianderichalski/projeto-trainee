@@ -17,7 +17,7 @@
     </nav>
   </header>
 
-  <section class="principal">
+  <section class="principal" id="principal">
     <div class="texto-principal">
       <h1>Cuidando do seu Pet com <br> Profissionalismo e Carinho</h1>
       <a href="#contato" class="botao-principal"><strong>Entre em contato</strong></a>
@@ -32,43 +32,57 @@
     </div>
   </section>
 
-  <div class="campanha-wrapper">
+<div class="campanha-wrapper">
     <a href="#" class="seta esquerda">
         <img src="imagens/setaesq.png" alt="Anterior">
     </a>
     
     <section class="campanha">
-        <div class="caixa-campanha">
-            
+        <div class="caixa-campanha slide-item" id="slide1">
             <div class="coluna-icones">
                 <img src="imagens/pata.png" alt="Pata Superior">
                 <img src="imagens/seringa.png" alt="Seringa">
                 <img src="imagens/pata.png" alt="Pata Inferior">
             </div>
-            
             <div class="conteudo-central">
                 <h2>Campanha de Vacinação</h2>
                 <p>Nos dias 19 a 28 de novembro</p>
                 <a href="#" class="botao-campanha">Saiba mais</a>
             </div>
-            
             <img src="imagens/cat.png" alt="Gato da Campanha" class="img-gato">
-            
         </div>
+        
+        <div class="caixa-campanha slide-item" id="slide2" style="display: none;">
+            <img src="imagens/banner2.png" alt="Campanha 2" class="imagem-slide-unica">
+        </div>
+        
+        <div class="caixa-campanha slide-item" id="slide3" style="display: none;">
+            <img src="imagens/banner3.png" alt="Campanha 3" class="imagem-slide-unica">
+        </div>
+        
     </section>
     
     <a href="#" class="seta direita">
         <img src="imagens/setadir.png" alt="Próximo">
     </a>
-    
-  </div>
+</div>
 
-  <div class="scroll">
-    <img src="imagens/cop1.png" alt="">
-  </div>
+    <div class="scroll-indicadores">
+        <div class="scroll-img ativo" data-slide="0">
+            <img src="imagens/cop1.png" alt="Indicador Campanha 1">
+        </div>
+    
+        <div class="scroll-img" data-slide="1">
+            <img src="imagens/cop2.png" alt="Indicador Campanha 2">
+        </div>
+        
+        <div class="scroll-img" data-slide="2">
+            <img src="imagens/cop3.png" alt="Indicador Campanha 3">
+        </div>
+    </div>
 
   <section class="sobre">
-    <div class="bloco3">
+    <div class="bloco3" id="quemsomos">
       <img src="imagens/logo2.png" alt="">
       <div class="texto-bloco3">
         <h2>Quem somos?</h2>
@@ -78,7 +92,7 @@
       </div>
     </div>
 
-   <div class="bloco2">
+   <div class="bloco2" id="servicos">
     <div class="bloco2-coluna"> 
         <h2>Nossos serviços</h2>
         <img src="imagens/veterinaria.png" alt="">
@@ -133,56 +147,103 @@
     <div class="lista-avaliacoes">
         
         <div class="avaliacao-item">
-            <img src="imagens/carlos.png" alt="">
+            <img src="imagens/carlos.png" alt="Foto de Carlos Alberto">
             <div class="conteudo-avaliacao">
-                
-                <div class="estrelas">
-                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
-                </div>
-                
+                <div class="estrelas estrelas-5"></div>
                 <h3>Carlos Alberto</h3>
-                
                 <p>Atendimento excepcional! A equipe foi muito cuidadosa e atenciosa com meu pet.</p>
             </div>
         </div>
 
         <div class="avaliacao-item">
-            <img src="imagens/neymar.png" alt="">
+            <img src="imagens/neymar.png" alt="Foto de Neymar Jr">
             <div class="conteudo-avaliacao">
-                
-                <div class="estrelas">
-                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
-                </div>
-                
+                <div class="estrelas estrelas-5"></div>
                 <h3>Neymar Jr</h3>
-                
                 <p>Não poderia estar mais feliz com o serviço desta clínica. Profissionais qualificados e atenciosos.</p>
             </div>
         </div>
 
         <div class="avaliacao-item">
-            <img src="imagens/josseana.png" alt="">
+            <img src="imagens/josseana.png" alt="Foto de Josseana da Silva">
             <div class="conteudo-avaliacao">
-                
-                <div class="estrelas">
-                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
-                </div>
-                
+                <div class="estrelas estrelas-5"></div>
                 <h3>Josseana da Silva</h3>
-                
                 <p>Excelente clínica! Desde o primeiro contato, fui atendido com profissionalismo e gentileza.</p>
+            </div>
+        </div>
+
+        
+        <div class="avaliacao-item">
+            <img src="imagens/carlos.png" alt="Foto de João Henrique">
+            <div class="conteudo-avaliacao">
+                <div class="estrelas estrelas-5"></div>
+                <h3>João Henrique</h3>
+                <p>Atendimento de primeira, cuidam muito bem dos animais e sempre explicam tudo com clareza.</p>
+            </div>
+        </div>
+
+        <div class="avaliacao-item">
+            <img src="imagens/neymar.png" alt="Foto de Adamiton Jr">
+            <div class="conteudo-avaliacao">
+                <div class="estrelas estrelas-5"></div>
+                <h3>Adamilton Jr</h3>
+                <p>A clínica é muito bem equipada, e os profissionais são incríveis, mas o tempo de espera poderia ser menor.</p>
+            </div>
+        </div>
+
+        <div class="avaliacao-item">
+            <img src="imagens/josseana.png" alt="Foto de Luciana da Silva">
+            <div class="conteudo-avaliacao">
+                <div class="estrelas estrelas-5"></div>
+                <h3>Luciana da Silva</h3>
+                <p>Profissionais capacitados e atenciosos, meu gato recebeu o melhor cuidado. Recomendo muito!</p>
+            </div>
+        </div>
+
+        
+        <div class="avaliacao-item">
+            <img src="imagens/carlos.png" alt="Foto de Matheus Brito">
+            <div class="conteudo-avaliacao">
+                <div class="estrelas estrelas-5"></div>
+                <h3>Matheus Brito</h3>
+                <p>A equipe é super dedicada e o ambiente é acolhedor, perfeito para quem se importa com o bem-estar do pet.</p>
+            </div>
+        </div>
+
+        <div class="avaliacao-item">
+            <img src="imagens/neymar.png" alt="Foto de Luiz Jr">
+            <div class="conteudo-avaliacao">
+                <div class="estrelas estrelas-5"></div>
+                <h3>Luiz Jr</h3>
+                <p>Atendimento excelente e muito atencioso! Meu pet recebeu todo o cuidado necessário e ficou ótimo.</p>
+            </div>
+        </div>
+
+        <div class="avaliacao-item">
+            <img src="imagens/josseana.png" alt="Foto de Clariane da Silva">
+            <div class="conteudo-avaliacao">
+                <div class="estrelas estrelas-5"></div>
+                <h3>Clariane da Silva</h3>
+                <p>Fiquei satisfeita com o atendimento, mas achei os preços um pouco altos para alguns serviços.</p>
             </div>
         </div>
         
     </div>
     
     <div class="paginacao">
-    <span>1</span>
-    <a href="#" class="seta-paginacao">
-        <img src="imagens/setaproximo.png" alt="">
+    
+    <a href="#" class="seta-anterior desativada"> 
+        <img src="imagens/setaanterior.png" alt="Avaliação Anterior"> 
     </a> 
-    </div>
-  </section>
+    
+    <span>1</span>
+    
+    <a href="#" class="seta-proximo"> 
+        <img src="imagens/setaproximo.png" alt="Próxima Avaliação">
+    </a> 
+</div>
+</section>
 
   <section class="contato" id="contato">
     
@@ -275,5 +336,6 @@
   <footer class="rodape">
     <p>UNECT JR - TODOS OS DIREITOS RESERVADOS</p>
   </footer>
+<script src="script.js"></script> 
 </body>
 </html>

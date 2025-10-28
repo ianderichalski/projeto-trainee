@@ -11,6 +11,7 @@
 body {
     font-family: 'Poppins', Arial, sans-serif;
     line-height: 1.5;
+    padding-top: 100px;
     background-color: #E2F5FA;
     width: 100%;
 }
@@ -33,6 +34,14 @@ header.topo {
     align-items: center;
     border-bottom: 1px solid #ccc;
 }
+.topo {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+    background-color: #FFFFFF;
+}
 
 .topo img {
     margin-left: 6.875rem;
@@ -48,6 +57,12 @@ header.topo {
     text-decoration: none;
     padding: 0.3125rem;
     margin-left: 0.625rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #7CCBE0; 
+    border-radius: 6px; 
 }
 
 .principal {
@@ -85,6 +100,12 @@ header.topo {
     text-decoration: none;
     display: inline-block;
     font-size: 1.125rem; 
+}
+
+.botao-principal:hover {
+    background-color: #7CCBE0;
+    color: #063643;
+    cursor: pointer;
 }
 
 .imagem-principal {
@@ -145,6 +166,11 @@ header.topo {
     width: auto;
 }
 
+.campanha-wrapper .seta.desativada {
+    opacity: 0.3;
+    cursor: default;
+    pointer-events: none;
+}
 
 .campanha { 
     height: 300px;
@@ -157,17 +183,29 @@ header.topo {
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.caixa-campanha { 
+.caixa-campanha.slide-item { 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    position: relative;
     padding: 20px 40px;
     box-sizing: border-box;
     background-color: #6BB7CB; 
+    transition: opacity 0.5s ease-in-out; 
+}
+
+.caixa-campanha .imagem-slide-unica {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .coluna-icones { 
@@ -248,94 +286,96 @@ header.topo {
     pointer-events: none;
 }
 
-.scroll {
-    width: 100px; 
-    height: auto;
-    margin: 5px auto 0 auto;
-    margin-top: -15px;
-    margin-bottom: 20px;
-    text-align: center;
+.scroll-indicadores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    height: 80px;
+    width: 100%;
 }
 
-.scroll img {
-    max-width: 100%;
-    height: auto;
-    display: block; 
+.scroll-img {
+    cursor: pointer;
+    opacity: 1; 
+    transition: opacity 0.3s ease;
+    display: none; 
 }
 
-.bloco2, .bloco3 {
+.scroll-img img {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+.scroll-img.ativo {
+    display: block;
+    opacity: 1; 
+    border: none;
+}
+
+.bloco2,
+.bloco3 {
     width: 100%;
     padding: 2.5rem 5%;
     display: flex;
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .bloco2 {
-    background: #6EB6CB;
-    background-image: url(imagens/fundo.png);
+    background: #6EB6CB url("imagens/fundo.png");
     padding: 5rem 5%;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
 }
 
 .bloco2-coluna {
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    flex-shrink: 0; 
-    margin-right: 1.875rem; 
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1.875rem;
 }
 
-.bloco2 h2 { 
-    text-align: center; 
-    margin: 0;
-    margin-bottom: 0.3125rem; 
-    width: 100%;
+.bloco2 h2 {
+    margin: 0 0 0.3125rem 0;
 }
 
-.bloco2 img { 
+.bloco2 img {
     max-width: 18.75rem;
-    height: auto; 
-    margin: 0;
+    height: auto;
+    margin: 0 auto;
 }
 
-.bloco2 p { 
-    flex-grow: 1; 
-    text-align: left; 
-    margin-top: 0; 
-    max-width: 500px; 
+.bloco2 p {
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .bloco3 {
-    background: #89C5D5; 
-    background-image: url(imagens/fundo.png);
-    flex-direction: row;
-    align-items: flex-start;
+    background: #89C5D5 url("imagens/fundo.png") repeat-x top center;
     padding: 1.875rem 5%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .texto-bloco3 {
-    flex-grow: 1;
-    text-align: left;
-    margin-right: 1.875rem;
+    margin: 0 1.875rem;
 }
 
-.bloco3 h2 { 
-    text-align: left; 
-    margin-top: 0;
-    margin-bottom: 0.9375rem;
+.bloco3 h2 {
+    margin: 0 0 0.9375rem 0;
 }
 
-.bloco3 p { 
-    max-width: 500px; 
-    text-align: left; 
-    margin-top: 0;
+.bloco3 p {
+    max-width: 500px;
+    margin: 0 auto;
 }
 
-.bloco3 img { 
+.bloco3 img {
     max-width: 15.625rem;
-    height: auto; 
+    height: auto;
+    margin: 0 auto;
 }
 
 .profissionais {
@@ -410,19 +450,19 @@ header.topo {
 
 .lista-avaliacoes {
     max-width: 50rem;
-    margin-left: 0;
+    margin: 0 auto;
 }
 
 .avaliacao-item {
+    width: 100%;
     display: flex;
     align-items: flex-start;
-    padding-bottom: 2rem; 
-    margin-bottom: 2rem; 
-    width: 100%;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
     border-bottom: 1px solid rgba(6, 54, 67, 0.2);
 }
 
-.avaliacao-item:last-child {
+.lista-avaliacoes .avaliacao-item:last-child {
     border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -442,13 +482,12 @@ header.topo {
 }
 
 .estrelas {
-    color: #FFD700;
-    font-size: 1rem;
+    width: 6.5rem; 
+    height: 1.2rem; 
     margin-bottom: 0.3125rem;
-}
-
-.estrelas span {
-    margin-right: 0.125rem;
+    background-image: url('imagens/estrela.png'); 
+    background-size: 20% 100%; 
+    background-repeat: repeat-x; 
 }
 
 .conteudo-avaliacao h3 {
@@ -472,16 +511,17 @@ header.topo {
     align-items: center;
     width: 100%;
     padding-top: 2.5rem;
+    gap: 15px;
 }
 
 .paginacao span {
     font-size: 1.1rem;
     color: #063643;
-    margin-right: 1rem;
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
 }
 
-.seta-paginacao {
+.seta-anterior,
+.seta-proximo {
     color: #063643;
     width: 2rem;
     height: 2rem;
@@ -490,10 +530,17 @@ header.topo {
     align-items: center;
 }
 
-.seta-paginacao img {
+.seta-anterior img,
+.seta-proximo img {
     width: 60%;
     height: auto;
     display: block;
+}
+
+.desativada {
+    opacity: 0.3;
+    cursor: default;
+    pointer-events: none;
 }
 
 .contato {
