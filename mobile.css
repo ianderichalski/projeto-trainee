@@ -119,7 +119,7 @@
         text-align: center;
         padding-top: 1.875rem;
         background-color: white;
-        background-image: url('imagens/elipse.png');
+        background-image: url('imagens/imagens_mobile/elipse.png');
         background-repeat: no-repeat;
         background-position: center -3.125rem;
         background-size: cover;
@@ -142,7 +142,7 @@
 
     .quem-somos-mobile {
         text-align: center;
-        background: #89C5D5 url("imagens/fundo.png");
+        background: #89C5D5 url("imagens/blocos/fundo.png");
         color: #063643;
     }
     .logo-quem-somos {
@@ -167,7 +167,7 @@
 
     .nossos-servicos-mobile {
         text-align: center;
-        background: #6EB6CB url("imagens/fundo.png");
+        background: #6EB6CB url("imagens/blocos/fundo.png");
         color: #063643;
         position: relative;
         z-index: 10;
@@ -318,7 +318,7 @@
         width: 5.5rem;
         height: 1rem;
         margin-bottom: 0.25rem;
-        background-image: url('imagens/estrela.png');
+        background-image: url('imagens/avaliacoes/estrela.png');
         background-size: 20% 100%;
         background-repeat: repeat-x;
     }

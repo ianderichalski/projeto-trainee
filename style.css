@@ -322,7 +322,7 @@ header.topo {
 }
 
 .bloco2 {
-    background: #6EB6CB url("imagens/fundo.png");
+    background: #6EB6CB url("imagens/blocos/fundo.png");
     padding: 5rem 5%;
 }
 
@@ -349,7 +349,7 @@ header.topo {
 }
 
 .bloco3 {
-    background: #89C5D5 url("imagens/fundo.png") repeat-x top center;
+    background: #89C5D5 url("imagens/blocos/fundo.png") repeat-x top center;
     padding: 1.875rem 5%;
     flex-direction: row;
     justify-content: center;
@@ -482,7 +482,7 @@ header.topo {
     width: 6.5rem;
     height: 1.2rem;
     margin-bottom: 0.3125rem;
-    background-image: url('imagens/estrela.png');
+    background-image: url('imagens/avaliacoes/estrela.png');
     background-size: 20% 100%;
     background-repeat: repeat-x;
 }
