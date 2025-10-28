@@ -6,10 +6,19 @@
     <title>Pindorama Pets</title>
     <link rel="stylesheet" href="mobile.css"> 
     <script>
-        if (window.innerWidth > 768) {
-            window.location.href = 'index.html'; 
+    const breakpoint = 768; 
+    const desktopURL = 'index.html';
+
+    function verificarRedirecionamento() {
+        if (window.innerWidth > breakpoint) {
+            window.location.href = desktopURL;
         }
-    </script>
+    }
+
+    verificarRedirecionamento();
+
+    window.onresize = verificarRedirecionamento;
+</script>
 </head>
 <body>
 
@@ -30,13 +39,13 @@
     </header>
 
     <section class="secao-principal-mobile">
-        <h1>Cuidamos do seu animal com muito amor</h1>
+        <h1>Cuidamos do seu<br>animal com muito amor</h1>
         <img src="imagens/pets.png" alt="Pets felizes" class="img-pets-mobile">
         <a href="#" class="btn-contato-mobile">Entre em contato</a>
     </section>
 
     <section class="quem-somos-mobile">
-        <h2>Quem Somos</h2>
+        <h2>Quem Somos?</h2>
         <img src="imagens/logo-mobile2.png" alt="Logo Quem Somos" class="logo-quem-somos">
         
         <p>Nossa clínica veterinária é comprometida com o cuidado e bem-estar de cada pet, com uma equipe dedicada e instalações modernas, buscamos garantir saúde e conforto em cada atendimento.</p>
@@ -84,96 +93,110 @@
         </div>
     </section>
 
-    <section class="avaliacoes-mobile">
-        <h2>Avaliações (9)</h2>
+<section class="avaliacoes-mobile">
+    <h2>Avaliações (9)</h2>
 
-        <div class="lista-avaliacoes">
-            <div class="avaliacao-item">
-                <img src="imagens/carlos.png" alt="Foto de Carlos Alberto">
-                <div class="conteudo-avaliacao">
-                    <div class="estrelas estrelas-5"></div>
-                    <h3>Carlos Alberto</h3>
-                    <p>Atendimento excepcional! A equipe foi muito cuidadosa e atenciosa com meu pet.</p>
-                </div>
+    <div class="lista-avaliacoes">
+           <div class="avaliacao-item">
+            <img src="imagens/carlos.png" alt="Foto de Carlos Alberto">
+            <div class="conteudo-avaliacao">
+                <div class="estrelas estrelas-5"></div>
+                <h3>Carlos Alberto</h3>
+                <p>Atendimento excepcional! A equipe foi muito cuidadosa e atenciosa com meu pet.</p>
             </div>
-
-            <div class="avaliacao-item">
-                <img src="imagens/neymar.png" alt="Foto de Neymar Jr">
-                <div class="conteudo-avaliacao">
-                    <div class="estrelas estrelas-5"></div>
-                    <h3>Neymar Jr</h3>
-                    <p>Não poderia estar mais feliz com o serviço desta clínica. Profissionais qualificados e atenciosos.</p>
-                </div>
-            </div>
-
-            <div class="avaliacao-item">
-                <img src="imagens/josseana.png" alt="Foto de Josseana da Silva">
-                <div class="conteudo-avaliacao">
-                    <div class="estrelas estrelas-5"></div>
-                    <h3>Josseana da Silva</h3>
-                    <p>Excelente clínica! Desde o primeiro contato, fui atendido com profissionalismo e gentileza.</p>
-                </div>
-            </div>
-
-            <div class="avaliacao-item">
-                <img src="imagens/carlos.png" alt="Foto de João Henrique">
-                <div class="conteudo-avaliacao">
-                    <div class="estrelas estrelas-5"></div>
-                    <h3>João Henrique</h3>
-                    <p>Atendimento de primeira, cuidam muito bem dos animais e sempre explicam tudo com clareza.</p>
-                </div>
-            </div>
-
-            <div class="avaliacao-item">
-                <img src="imagens/neymar.png" alt="Foto de Adamiton Jr">
-                <div class="conteudo-avaliacao">
-                    <div class="estrelas estrelas-5"></div>
-                    <h3>Adamilton Jr</h3>
-                    <p>A clínica é muito bem equipada, e os profissionais são incríveis, mas o tempo de espera poderia ser menor.</p>
-                </div>
-            </div>
-
-            <div class="avaliacao-item">
-                <img src="imagens/josseana.png" alt="Foto de Luciana da Silva">
-                <div class="conteudo-avaliacao">
-                    <div class="estrelas estrelas-5"></div>
-                    <h3>Luciana da Silva</h3>
-                    <p>Profissionais capacitados e atenciosos, meu gato recebeu o melhor cuidado. Recomendo muito!</p>
-                </div>
-            </div>
-            
-            <div class="avaliacao-item">
-                <img src="imagens/carlos.png" alt="Foto de Matheus Brito">
-                <div class="conteudo-avaliacao">
-                    <div class="estrelas estrelas-5"></div>
-                    <h3>Matheus Brito</h3>
-                    <p>A equipe é super dedicada e o ambiente é acolhedor, perfeito para quem se importa com o bem-estar do pet.</p>
-                </div>
-            </div>
-
-            <div class="avaliacao-item">
-                <img src="imagens/neymar.png" alt="Foto de Luiz Jr">
-                <div class="conteudo-avaliacao">
-                    <div class="estrelas estrelas-5"></div>
-                    <h3>Luiz Jr</h3>
-                    <p>Atendimento excelente e muito atencioso! Meu pet recebeu todo o cuidado necessário e ficou ótimo.</p>
-                </div>
-            </div>
-
-            <div class="avaliacao-item">
-                <img src="imagens/josseana.png" alt="Foto de Clariane da Silva">
-                <div class="conteudo-avaliacao">
-                    <div class="estrelas estrelas-5"></div>
-                    <h3>Clariane da Silva</h3>
-                    <p>Fiquei satisfeita com o atendimento, mas achei os preços um pouco altos para alguns serviços.</p>
-                </div>
-            </div>
-            
         </div>
+
+        <div class="avaliacao-item">
+            <img src="imagens/neymar.png" alt="Foto de Neymar Jr">
+            <div class="conteudo-avaliacao">
+                <div class="estrelas estrelas-5"></div>
+                <h3>Neymar Jr</h3>
+                <p>Não poderia estar mais feliz com o serviço desta clínica. Profissionais qualificados e atenciosos.</p>
+            </div>
+        </div>
+
+        <div class="avaliacao-item">
+            <img src="imagens/josseana.png" alt="Foto de Josseana da Silva">
+            <div class="conteudo-avaliacao">
+                <div class="estrelas estrelas-5"></div>
+                <h3>Josseana da Silva</h3>
+                <p>Excelente clínica! Desde o primeiro contato, fui atendido com profissionalismo e gentileza.</p>
+            </div>
+        </div>
+
+        
+        <div class="avaliacao-item">
+            <img src="imagens/carlos.png" alt="Foto de João Henrique">
+            <div class="conteudo-avaliacao">
+                <div class="estrelas estrelas-5"></div>
+                <h3>João Henrique</h3>
+                <p>Atendimento de primeira, cuidam muito bem dos animais e sempre explicam tudo com clareza.</p>
+            </div>
+        </div>
+
+        <div class="avaliacao-item">
+            <img src="imagens/neymar.png" alt="Foto de Adamiton Jr">
+            <div class="conteudo-avaliacao">
+                <div class="estrelas estrelas-5"></div>
+                <h3>Adamilton Jr</h3>
+                <p>A clínica é muito bem equipada, e os profissionais são incríveis, mas o tempo de espera poderia ser menor.</p>
+            </div>
+        </div>
+
+        <div class="avaliacao-item">
+            <img src="imagens/josseana.png" alt="Foto de Luciana da Silva">
+            <div class="conteudo-avaliacao">
+                <div class="estrelas estrelas-5"></div>
+                <h3>Luciana da Silva</h3>
+                <p>Profissionais capacitados e atenciosos, meu gato recebeu o melhor cuidado. Recomendo muito!</p>
+            </div>
+        </div>
+
+        
+        <div class="avaliacao-item">
+            <img src="imagens/carlos.png" alt="Foto de Matheus Brito">
+            <div class="conteudo-avaliacao">
+                <div class="estrelas estrelas-5"></div>
+                <h3>Matheus Brito</h3>
+                <p>A equipe é super dedicada e o ambiente é acolhedor, perfeito para quem se importa com o bem-estar do pet.</p>
+            </div>
+        </div>
+
+        <div class="avaliacao-item">
+            <img src="imagens/neymar.png" alt="Foto de Luiz Jr">
+            <div class="conteudo-avaliacao">
+                <div class="estrelas estrelas-5"></div>
+                <h3>Luiz Jr</h3>
+                <p>Atendimento excelente e muito atencioso! Meu pet recebeu todo o cuidado necessário e ficou ótimo.</p>
+            </div>
+        </div>
+
+        <div class="avaliacao-item">
+            <img src="imagens/josseana.png" alt="Foto de Clariane da Silva">
+            <div class="conteudo-avaliacao">
+                <div class="estrelas estrelas-5"></div>
+                <h3>Clariane da Silva</h3>
+                <p>Fiquei satisfeita com o atendimento, mas achei os preços um pouco altos para alguns serviços.</p>
+            </div>
+        </div> 
+    </div>
+
+    <div class="paginacao">
+        
+        <a href="#" class="seta-anterior desativada"> 
+            <img src="imagens/seta-mobile2.png" alt="Avaliação Anterior"> 
+        </a> 
+        
+        <span>1</span>
+        
+        <a href="#" class="seta-proximo"> 
+            <img src="imagens/seta-mobile.png" alt="Próxima Avaliação">
+        </a> 
+    </div>
     </section>
     
     <section class="formulario-mobile">
-        <h2>Entre em Contato</h2>
+        <h2>Entre em contato</h2>
         <form class="formulario">
                 <label for="nome"><strong>Nome</strong></label>
                 <input type="text" id="nome" required>
@@ -222,6 +245,7 @@
     <footer class="rodape-mobile">
         <p>UNECT JR - TODOS OS DIREITOS RESERVADOS</p>
     </footer>
+    <script src="script.js"></script> 
 
 </body>
 </html>

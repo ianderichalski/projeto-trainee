@@ -89,7 +89,8 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
         
-        indicadores.forEach(indicador => {
+        indicadores.forEach((indicador, index) => {
+            indicador.setAttribute('data-slide', index);
             indicador.addEventListener('click', function() {
                 const novoIndice = parseInt(this.getAttribute('data-slide'));
                 if (novoIndice !== indiceAtual) {
@@ -111,7 +112,8 @@ document.addEventListener("DOMContentLoaded", function() {
         };
     }
     
-    const avaliacoes = document.querySelectorAll('.avaliacao-item');
+    const listaAvaliacoes = document.querySelector('.lista-avaliacoes');
+    const avaliacoes = listaAvaliacoes ? Array.from(listaAvaliacoes.querySelectorAll('.avaliacao-item')) : [];
     const setaProxima = document.querySelector('.seta-proximo'); 
     const setaAnterior = document.querySelector('.seta-anterior');
     const spanPaginaAtual = document.querySelector('.paginacao span');
@@ -175,7 +177,8 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         };
     }
-
-    mostrarAvaliacoes();
-
+    
+    if (avaliacoes.length > 0) {
+        mostrarAvaliacoes();
+    }
 });

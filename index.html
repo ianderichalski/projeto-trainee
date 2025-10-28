@@ -5,6 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pindorama Pets</title>
   <link rel="stylesheet" href="style.css">
+    <script>
+    const breakpoint = 768; 
+    const mobileURL = 'mobile.html';
+
+    function verificarRedirecionamento() {
+        if (window.innerWidth <= breakpoint) {
+            window.location.href = mobileURL;
+        }
+    }
+
+    verificarRedirecionamento();
+
+    window.onresize = verificarRedirecionamento;
+</script>
 </head>
 <body>
   <header class="topo">

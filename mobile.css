@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@media screen and (max-width: 48rem) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        background-color: #E2F5FA;
+        color: #333;
+    }
+
+    h1, h2, h3 {
+        color: #063643;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+    }
+
+    section {
+        padding: 1.5625rem 5%;
+    }
+
+    .btn-contato-mobile, .btn-agendar-consulta {
+        display: block;
+        width: 100%;
+        max-width: 13.125rem;
+        margin: 0.9375rem auto 0 auto;
+        padding: 0.625rem;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 0.25rem;
+        font-weight: 600;
+        cursor: pointer;
+        box-sizing: border-box;
+        transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    }
+
+    .botao-enviar {
+        display: block;
+        padding: 0.9375rem 1.875rem;
+        width: auto;
+        max-width: 90%;
+        margin: 0.9375rem auto 0 auto;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        cursor: pointer;
+        box-sizing: border-box;
+        font-size: 1rem;
+    }
+
+    .btn-contato-mobile {
+        background-color: #0F637A;
+        color: white;
+        border: none;
+    }
+    .btn-contato-mobile:hover {
+        font-weight: 700;
+        color: #063643;
+        background-color: #7CCBE0;
+    }
+
+    .btn-agendar-consulta {
+        background-color: white;
+        font-family: 'Poppins', sans-serif;
+        color: #063643;
+        font-weight: 800;
+        margin-top: 1.875rem;
+        border: none;
+    }
+    .btn-agendar-consulta:hover {
+        background-color: #063643;
+        color: white;
+    }
+
+    .botao-enviar {
+        background-color: #0F637A;
+        color: #F8F8FF;
+        border-style: none;
+        font-weight: 700;
+    }
+
+    .topo-mobile {
+        background-color: white;
+        padding: 0.5rem 5%;
+        height: 6.25rem;
+        box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        box-sizing: border-box;
+    }
+
+    .topo-mobile-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .menu-abrir {
+        width: 1.75rem; height: 1.75rem;
+    }
+    .menu-abrir img {
+        width: 100%; height: auto; display: block;
+    }
+    .logo-mobile-container {
+        flex-grow: 1; text-align: center;
+    }
+    .logo-mobile {
+        max-height: 5rem;
+    }
+    .icone-dummy {
+        width: 1.75rem;
+    }
+
+    .secao-principal-mobile {
+        text-align: center;
+        padding-top: 1.875rem;
+        background-color: white;
+        background-image: url('imagens/elipse.png');
+        background-repeat: no-repeat;
+        background-position: center -3.125rem;
+        background-size: cover;
+    }
+    .secao-principal-mobile h1 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        text-align: left;
+        color: #063643;
+        font-size: 2rem;
+        margin-bottom: 0.9375rem;
+        line-height: 1.2;
+    }
+    .img-pets-mobile {
+        max-width: 100%;
+        height: auto;
+        margin-top: 0.9375rem;
+        border-radius: 0.375rem;
+    }
+
+    .quem-somos-mobile {
+        text-align: center;
+        background: #89C5D5 url("imagens/fundo.png");
+        color: #063643;
+    }
+    .logo-quem-somos {
+        max-width: 11.25rem;
+        margin: 0.625rem auto 0.9375rem auto;
+        display: block;
+    }
+    .quem-somos-mobile p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 0.75rem;
+    }
+    .quem-somos-mobile .destaque {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        color: #063643;
+        text-align: center;
+        margin-top: 0.9375rem;
+    }
+
+    .nossos-servicos-mobile {
+        text-align: center;
+        background: #6EB6CB url("imagens/fundo.png");
+        color: #063643;
+        position: relative;
+        z-index: 10;
+        margin-bottom: 0;
+    }
+    .nossos-servicos-mobile h2 {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.4rem;
+        margin-bottom: 0.75rem;
+    }
+    .nossos-servicos-mobile p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.95rem;
+        line-height: 1.4;
+        margin-bottom: 0.9375rem;
+    }
+    .img-cat-servicos {
+        max-width: 60%;
+        height: auto;
+        margin-top: 0.625rem;
+        margin-bottom: -9.375rem;
+        display: block;
+        margin-left: 70%;
+        margin-right: auto;
+    }
+
+    .profissionais {
+        width: 100%;
+        position: relative;
+        z-index: 20;
+        margin: 0 0 0.9375rem 0;
+        background-color: #E2F5FA;
+        padding: 1.5625rem 0;
+    }
+
+    .profissionais h2 {
+        text-align: center;
+        margin-bottom: 1.25rem;
+        padding: 0 5%;
+        font-family: 'Poppins', sans-serif;
+        color: #063643;
+    }
+
+    .medicos {
+        background-color: white;
+        padding-top: 2.1875rem;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 1.5625rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 0.9375rem;
+        box-sizing: border-box;
+    }
+
+    .pessoa {
+        width: 46%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: none;
+        background-color: transparent;
+    }
+
+    .pessoa img {
+        max-width: 100%;
+        height: auto;
+        border: none;
+        margin-bottom: 0.625rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .pessoa h3 {
+        font-size: 0.95rem;
+        margin-bottom: 0.1875rem;
+        font-family: 'Inter', sans-serif;
+        color: #063643;
+        font-weight: normal;
+    }
+
+    .pessoa p {
+        font-size: 0.8rem;
+        font-family: 'Inter', sans-serif;
+        color: #063643;
+        margin-bottom: 0.9375rem;
+    }
+
+    .avaliacoes-mobile {
+        width: 100%;
+        margin: 0 0 0.9375rem 0;
+        padding: 1.5625rem 5%;
+        color: #063643;
+        border-radius: 0.375rem;
+        box-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05);
+    }
+
+    .avaliacoes-mobile h2 {
+        font-family: 'Poppins', sans-serif;
+        color: #063643;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    .lista-avaliacoes {
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .avaliacao-item {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: none;
+    }
+
+    .lista-avaliacoes .avaliacao-item:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .avaliacao-item img {
+        width: 2.8125rem;
+        height: 2.8125rem;
+        object-fit: cover;
+        margin-right: 0.8rem;
+        flex-shrink: 0;
+        border-radius: 50%;
+    }
+
+    .conteudo-avaliacao {
+        flex-grow: 1;
+        text-align: left;
+    }
+
+    .estrelas {
+        width: 5.5rem;
+        height: 1rem;
+        margin-bottom: 0.25rem;
+        background-image: url('imagens/estrela.png');
+        background-size: 20% 100%;
+        background-repeat: repeat-x;
+    }
+
+    .conteudo-avaliacao h3 {
+        color: #063643;
+        font-size: 0.95rem;
+        font-weight: normal;
+        font-family: 'Inter', sans-serif;
+        margin-bottom: 0.2rem;
+        text-align: left;
+    }
+
+    .conteudo-avaliacao p {
+        color: #063643;
+        font-size: 0.85rem;
+        margin-bottom: 0;
+        font-family: 'Inter', sans-serif;
+        line-height: 1.4;
+    }
+
+    .paginacao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-top: 1.5rem;
+        gap: 0.625rem;
+    }
+
+    .paginacao span {
+        font-size: 1.25rem;
+        color: #063643;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        padding: 2.5rem;
+    }
+
+    .seta-anterior,
+    .seta-proximo {
+        width: 1.8rem;
+        height: 1.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .seta-anterior img,
+    .seta-proximo img {
+        width: 150%;
+        height: auto;
+        display: block;
+    }
+
+    .desativada {
+        opacity: 0;
+        cursor: default;
+        pointer-events: none;
+    }
+
+    .formulario-mobile {
+        background-color: white;
+        text-align: center;
+    }
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        max-width: 25rem;
+        margin: 1.25rem auto 0 auto;
+        text-align: left;
+    }
+    .formulario label {
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.9rem;
+        margin-top: 0.3125rem;
+    }
+    .formulario input[type="text"],
+    .formulario input[type="email"],
+    .formulario textarea {
+        font-family: 'Poppins', sans-serif;
+        width: 100%;
+        padding: 0.5rem;
+        border: 0.0625rem solid black;
+        border-radius: 0.25rem;
+        box-sizing: border-box;
+        font-size: 0.95rem;
+    }
+    .formulario textarea {
+        resize: none;
+        min-height: 5rem;
+    }
+
+    .redes-sociais-secao {
+        padding: 0.9375rem 5%;
+        background-color: #E2F5FA;
+        box-shadow: none;
+    }
+    .redes-sociais-mobile {
+        display: flex;
+        justify-content: center;
+        gap: 1.5625rem;
+    }
+    .redes-sociais-mobile img {
+        width: 3rem;
+        height: 3rem;
+        padding: 0.5rem;
+    }
+
+    .informacoes-secao-mobile {
+        background-color: white;
+        padding: 1.5625rem 5%;
+        box-shadow: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 0.9375rem;
+    }
+
+    .coluna-mobile {
+        width: 45%;
+        margin-bottom: 1.25rem;
+    }
+
+    .coluna-mobile .titulo-coluna {
+        font-family: 'Inter', sans-serif;
+        color: #063643;
+        font-size: 0.95rem;
+        font-weight: bold;
+        margin-bottom: 0.625rem;
+        text-align: left;
+    }
+    .coluna-mobile ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .coluna-mobile li {
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.9rem;
+        line-height: 1.8;
+        color: #555;
+    }
+
+    .rodape-mobile {
+        background-color: #063643;
+        color: #fff;
+        padding: 0.75rem 5%;
+        text-align: center;
+        font-size: 0.75rem;
+        line-height: 1.4;
+        margin-bottom: 0;
+    }
+    .rodape-mobile p {
+        font-weight: 700;
+        margin: 0;
+    }
+
+}
