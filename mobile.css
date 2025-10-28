@@ -54,7 +54,7 @@
 
     .btn-contato-mobile {
         background-color: #0F637A;
-        color: white;
+        color: #F8F8FF;
         border: none;
     }
     .btn-contato-mobile:hover {
@@ -64,7 +64,7 @@
     }
 
     .btn-agendar-consulta {
-        background-color: white;
+        background-color: #F8F8FF;
         font-family: 'Poppins', sans-serif;
         color: #063643;
         font-weight: 800;
@@ -73,7 +73,7 @@
     }
     .btn-agendar-consulta:hover {
         background-color: #063643;
-        color: white;
+        color: #F8F8FF;
     }
 
     .botao-enviar {
@@ -84,7 +84,7 @@
     }
 
     .topo-mobile {
-        background-color: white;
+        background-color: #F8F8FF;
         padding: 0.5rem 5%;
         height: 6.25rem;
         box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
@@ -118,7 +118,7 @@
     .secao-principal-mobile {
         text-align: center;
         padding-top: 1.875rem;
-        background-color: white;
+        background-color: #F8F8FF;
         background-image: url('imagens/imagens_mobile/elipse.png');
         background-repeat: no-repeat;
         background-position: center -3.125rem;
@@ -212,7 +212,7 @@
     }
 
     .medicos {
-        background-color: white;
+        background-color: #F8F8FF;
         padding-top: 2.1875rem;
         padding-left: 5%;
         padding-right: 5%;
@@ -381,7 +381,7 @@
     }
 
     .formulario-mobile {
-        background-color: white;
+        background-color: #F8F8FF;
         text-align: center;
     }
     .formulario {
@@ -430,7 +430,7 @@
     }
 
     .informacoes-secao-mobile {
-        background-color: white;
+        background-color: #F8F8FF;
         padding: 1.5625rem 5%;
         box-shadow: none;
         display: flex;
@@ -467,7 +467,7 @@
 
     .rodape-mobile {
         background-color: #063643;
-        color: #fff;
+        color: #F8F8FF;
         padding: 0.75rem 5%;
         text-align: center;
         font-size: 0.75rem;
