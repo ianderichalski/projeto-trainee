@@ -251,7 +251,9 @@ header.topo {
 .scroll {
     width: 100px; 
     height: auto;
-    margin: 5px auto 0 auto; 
+    margin: 5px auto 0 auto;
+    margin-top: -15px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -302,7 +304,6 @@ header.topo {
     flex-grow: 1; 
     text-align: left; 
     margin-top: 0; 
-    font-weight: 500; 
     max-width: 500px; 
 }
 
@@ -493,6 +494,145 @@ header.topo {
     width: 60%;
     height: auto;
     display: block;
+}
+
+.contato {
+    padding: 3rem 5%;
+    background-color: #E2F5FA; 
+}
+
+.contato-wrapper {
+    max-width: 900px;
+    margin: 0 auto; 
+    text-align: left; 
+}
+
+.contato h2 {
+    margin-bottom: 2rem;
+}
+
+.caixa-contato {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex; 
+    border: 1.5px solid #ccc; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #FFFFFF; 
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+.info-contato {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    text-align: left;
+    border-right: 2px solid #ccc; 
+}
+
+.titulo-localizacao {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #063643;
+}
+
+.endereco {
+    font-style: italic; 
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    color: #063643;
+}
+
+.mapa-container {
+    width: 100%;
+    padding-top: 100%; 
+    height: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.mapa-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contatos-sociais {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contatos-sociais li {
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    color: #063643;
+}
+
+.contatos-sociais li img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.formulario {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 5px; 
+}
+
+.formulario label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #063643;
+    margin-top: 10px; 
+    margin-bottom: 5px;
+    text-align: left; 
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.formulario textarea {
+    resize: none;
+    min-height: 120px; 
+}
+
+.botao-enviar {
+    background: #0F637A;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 25px; 
+    align-self: flex-start; 
+    max-width: 150px;
+}
+
+.botao-enviar:hover {
+    background: #063643;
 }
 
 .descricao {
